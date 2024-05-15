@@ -1,0 +1,188 @@
+/*These are link settings*/
+/* unvisited link */
+	a:link {
+		color: #222222;}
+
+/*Hovering Color*/
+	a:hover { 
+		color: #00FFFA}
+
+/* visited link */
+	a:visited {
+		color: #222222;}
+
+/* mouse over link */
+	a:hover {
+		color: #00FFFA;}
+
+/* selected link */
+	a:active {
+		color: #00FFFA;}
+
+	body {	/*This will mess with everything.*/
+		font-size: 1em;
+		font-weight: normal;
+		font-family: Arial, Sans-serif;
+		color: #000000;
+		width: 1500px;
+		min-width: 720px;
+		text-align: left;
+		  background-color: #444444;
+		/*background-image: url("");*/
+		margin-left: 10%;
+		margin-right: 10%;}
+	h1 {	/*This is the title*/
+		font-size: 3em;
+		font-weight: bold;
+		font-family: Arial, Sans-serif;
+		color: #000000;
+		text-align: center;
+		background-color: #00FFFA;
+		padding: 0;
+		border: 1px solid black;
+		margin: 0;
+		background-color: #FFA500; /*Orange*/
+		padding: 1em;
+		border-width: 1em; 
+		border-style: solid;
+		border-color: #000000;
+		margin: 10px !important;}
+	h2 {	/*This affects the Unit lables*/
+		position: relative;
+		right: -5%;
+		font-size: 1.4em;
+		font-family: Arial, Sans-serif;
+		color: #000000;}
+	div {
+		border: 5px solid black;
+		padding: 1em;
+		margin: 1em;}
+	p {		/*This will control all the text within the boxes.*/
+		color: #000000;
+		text-align: left;
+		background-color: #FFA500;
+		margin: 1%;
+		padding: 1%;
+		border-width: 5px; 
+		border-style: solid;
+		border-color: #000000;
+		margin: 5px !important;}	
+		
+		/*"div" and "p" must be named accorrdinly*/
+		/*id="whatever" is each box*/
+	div#skipnav {
+		position: relative;
+		right: -40%; /*This messes with the position of the "skip to main content" box*/
+		/*0 = alinged with the rest of the boxes*/
+		/*-x = anything right of that/vice versa*/
+		background-color: #00FFFA;
+		width: 15%;
+		color: #000000;
+		text-align: center; 
+		border-color: #000000;
+		background-color: #FFA500;}
+		
+		/*This Messes with the text below the title.*/
+	div.info {
+		float: left; /*this will float to whatever side is labled*/
+		width: 43.5%;
+		font-size: 1.2em;
+		color: #ff0000;
+		background-color: #FFA533;
+		border-width: 10px; 
+		border-style: solid;
+		border-color: #000000;}
+		
+		/*This messes with my links*/
+	nav { 
+		clear: left;} /*Text Alingment*/
+		
+	#alert {
+		position: relative;
+		right: -37.5%;
+		width: 20em;
+		text-align: center;
+		color: black;
+		font-weight: bold;
+		background: #FA555C; /* Redish */
+		border: 5px;
+		border-color: #000000;
+		padding: 1em;}
+		
+	p#p1 {
+		position: relative;
+		right: -30%; /*This messes with the position of the "skip to main content" box*/
+		width: 35em;
+		text-align: center; 
+		border-color: #000000;
+		background-color: #FFA500;}
+		
+	video#myvideo {
+		position: relative;
+		text-align: center;
+		width: 30px;
+		border-width: 4em;
+		border-style: solid;
+		border-color: #000000;}
+		
+	nav#nav {
+		position: relative;
+		text-align: center;}
+		
+	div#box_1 {
+		position: relative;
+		right: -7%;
+		width: 30em;
+		text-align: center;
+		color: black;
+		font-weight: bold;
+		background: #00FFFA; /* MKWii Blue */
+		border: 5px solid black;
+		padding: 1em;}
+		
+	video#video_1 {
+		position: relative;
+		width: 25px;
+		border-width: 4em;
+		border-style: solid;
+		border-color: #000000;}
+		
+	Div#Graphics_1{
+		border-width: 1em;
+		border-style: solid;
+		border-color: #444444;
+		text-align: center;}
+	
+	Div#Graphics_2{
+		text-align: center;}
+	
+	p#graph1	{
+		position: relative;
+		text-align: center;
+		font-weight: bold;
+		background: #00FFFA;
+		border: 5px;
+		border-color: #000000;
+		padding: 1em;}
+	
+	img#Banner1 {
+		position: relative;
+		display: block;		/*This centers the image*/
+		margin-left: auto;	/*This centers the image*/
+		margin-right: auto;	/*This centers the image*/
+		border-style: solid;
+		border-width: 5px;
+		padding: 3em;} 		/*Distance between other boxes*/
+		
+	img#Banner {
+		border: 5px;}
+		
+	h2#Tab1 {				/*This is the orange Text*/
+		font-weight: bold;
+		color: #FFA500;}
+	h2#Tab2 {
+		font-weight: bold;
+		color: #FFA500;}
+	h2#Tab3 {
+		font-weight: bold;
+		color: #FFA500;}
