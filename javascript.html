@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset-utf-8>
+	<title>Grayson Flora's Javascript Page</title>
+	<link type="text/css" rel="stylesheet" href="styles/mystyle.css" media="screen">
+	<link rel="shortcut icon" href="images/Other/Famicom_Bill.png">
+	 <style>
+    div#clock { 
+			display: none; /*"display: block;" will show it again.*/
+			position: relative;
+			text-align: center;
+			right: 2.25%;
+			width: 12%;
+			font-size: 2em;
+			font-family: Arial, Sans-serif;
+			background-color: #444444;
+			color: #444444; /*text color*/
+			border: 4px solid black;
+			padding: 0.5em;
+			box-shadow: 4px 4px 4px #000000;}
+			button:hover, button:focus, button:active { /* swap colors */
+			color: #FFFFFF;
+			background-color: #FFA500;
+			cursor: pointer; /* displays a hand */}
+		button#clockButton {
+			position: relative;
+			text-align: center;
+			right: 0%;
+			width: 10%;
+			font-size: 1em;
+			font-family: Arial, Sans-serif;
+			background-color: #FFA500;
+			color: #444444; /*text color*/
+			border: 4px solid black;
+			padding: 0.5em;
+			box-shadow: 4px 4px 4px #000000;}
+			button:hover, button:focus, button:active { /* swap colors */
+			color: #FFFFFF;
+			background-color: #00FFFA;
+			cursor: pointer; /* displays a hand */}
+			}
+  </style>
+</head>
+   <body>
+		<img id="Banner" src="images/Banner2v1.0.jpg" width="1560" height="260" style="border:none" 
+			alt="Banner"/></a>
+		<img id="Banner1" src="images/Items.gif" width="780" height="130" style="border:none" 
+			alt="Banner"/></a>
+	<h1>Grayson Flora's Javascript Page</h1>
+	<nav id="nav">
+			<a href="index.html">Home</a>
+			<a href="graphics.html">Graphics</a>
+			<a href="accessibility.html">Accessibility</a>
+			<a href="usability.html">Usability</a>
+			<a href="javascript.html">Javascript</a>
+			<a href="tools.html">Tools</a>
+			<a href="video.html">Video</a>
+			<a href="movie_review.html">Movie Review</a>
+			<a href="https://www.youtube.com/channel/UCIrjcRNy1JTOh0CQuP3Dk8w" target ="blank">lol</a>
+		</nav>
+	<h2>Alert Button</h2>
+	<button id="ShowAlert" onclick="showAlert()">Show Alert</button> <script>/*This modifies the button*/</script>
+		<script>
+			function showAlert() { /*This is a command to get a notification everytime you load this site.*/
+				var myText = "Welcome to the MKWii Modding comunity!";	/*Gray text is customizable*/
+				alert (myText);}
+			function updateTime() { 
+				// get all parts of the current time
+				var now = new Date();	/*var = variable*/
+				var hours = now.getHours();
+				var minutes = now.getMinutes();
+				var seconds = now.getSeconds();
+				  // add leading zero's to minutes and seconds
+  if (minutes < 10) { 
+    minutes = '0' + minutes;}
+  if (seconds < 10) { 
+    seconds = '0' + seconds;}				
+
+  // get time of day (am or pm) 
+  if (hours >= 12 && hours < 24) { 
+    var timeOfDay = 'pm';}
+  else { 
+    var timeOfDay = 'am'; }
+				
+  // convert hours from 24-hour time to 12-hour time
+  if (hours > 12) { 
+    hours = hours - 12;
+  }
+				// splice them together into a character string named "currentTime"
+				var currentTime = hours + ':' + minutes + ':' + seconds + '  ' + timeOfDay;		// get the clock div 
+				var myClock = document.getElementById('clock');
+				// write the currentTime string to the clock div
+				myClock.innerHTML = currentTime;}
+				  function toggleClock() { 
+    // get the clock 
+    var myClock = document.getElementById('clock');
+
+    // get the current value of the clock's display property 
+    var displaySetting = myClock.style.display;
+
+    // also get the clock button, so we can change what it says 
+    var clockButton = document.getElementById('clockButton');
+				
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') { 
+      // clock is visible. hide it
+      myClock.style.display = 'none';
+      // change button text
+      clockButton.innerHTML = 'Show Clock';
+    }
+    else { 
+      // clock is hidden. show it 
+      myClock.style.display = 'block';
+      // change button text
+      clockButton.innerHTML = 'Hide Clock';
+    }
+  }  
+		</script>
+		<h2>Clock Button</h2>
+		<div id="clock"></div>
+		<button onclick="toggleClock()" id="clockButton">Show clock</button>
+		<body onload="setInterval('updateTime()',1000)">
+	<div id="snake"
+	<button><a href="snake.html">Snake</a></button> </div>
+	<div id="snake">
+	<a href="pac_man.html">Pac Man</a> </div>
+		<style>
+		#ShowAlert { 
+			font-size: 2em;
+			background-color: #444444;
+			color: #FFA500; /*text color*/
+			border: 3px solid black;
+			box-shadow: 4px 4px 4px #000000;}
+			button:hover, button:focus, button:active { /* swap colors */
+			color: #FFFFFF;
+			background-color: #00FFFFA;
+			cursor: pointer; /* displays a hand */}
+		#a:hover {
+			background-color: #FFA500;
+			}
+		#snake {
+			position: relative;
+			text-align: center;
+			right: 0%;
+			width: 7%;
+			font-size: 1em;
+			font-family: Arial, Sans-serif;
+			background-color: #FFA500;
+			color: #444444; /*text color*/
+			border: 4px solid black;
+			padding: 0.5em;
+			box-shadow: 4px 4px 4px #000000;}
+			button:hover, button:focus, button:active { /* swap colors */
+			color: #FFFFFF;
+			background-color: #00FFFA;
+			cursor: pointer; /* displays a hand */}
+		#pac_man {
+			border: 0em;
+			border-color: #444444;}
+		</style>
+   </body>
+</html>
